@@ -1,12 +1,12 @@
 #!bin/bash
 
-touch /etc/yum.repo.d/nginx.repo
+touch /etc/yum.repos.d/nginx.repo
 
 echo -e"[nginx]
 \nname=nginx repo
 \nbaseurl=http://nginx.org/packages/centos/7/$basearch/
 \ngpgcheck=0
-\nenabled=1" >> /etc/yum.repo.d/nginx.repo
+\nenabled=1" >> /etc/yum.repos.d/nginx.repo
 
 yum install -y nginx
 
